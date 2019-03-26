@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>( ⊙ o ⊙ )</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/menu.css" >
+    <link rel="stylesheet" href="css/hovercg.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/loading.css">
+
+</head>
+<body>
+    <div class="section">
+        <div class='tiles'>
+            <div class='col'>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div class='box'></div>
+            </div>
+            <div class='col'>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div class='box'></div>
+            </div>
+            <div class='col'>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div class='box'></div>
+            </div>
+            <div class='col'>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div class='box'></div>
+            </div>
+            <div class='col'>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div class='box'></div>
+            </div>
+            <div class='col'>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div class='box'></div>
+            </div>
+            <div class='col'>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div class='box'></div>
+            </div>
+            <div class='col'>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div class='box'></div>
+            </div>
+            <div class='col'>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div class='box'></div>
+            </div>
+            <div class='col'>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div class='box'></div>
+            </div>
+            <div class='col'>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div class='box'></div>
+            </div>
+            <div class='col'>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div class='box'></div>
+            </div>
+            <div class='col'>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div class='box'></div>
+            </div>
+            <div class='col'>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div class='box'></div>
+            </div>
+            <div class='col'>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div class='box'></div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="content">
+            <h1>泡泡悬停效果</h1>
+            <div class="button_container">
+                <div class="button_su">
+                    <span class="su_button_circle"></span><a href="#" class="button_su_inner"><span class="button_text_container">Simple button</span></a>
+                </div>
+                <div class="button_su">
+                    <span class="su_button_circle"></span><a href="#" class="button_su_inner"><span class="button_text_container">Another button</span></a>
+                </div>
+                <div class="button_su">
+                    <span class="su_button_circle"></span><a href="#" class="button_su_inner"><span class="button_text_container">A third button</span></a>
+                </div>
+                <div class="button_su">
+                    <span class="su_button_circle"></span><a href="#" class="button_su_inner"><span class="button_text_container">A forth button</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section ">
+        <div class="trinity-rings-spinner">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="half-circle-spinner">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+        </div>
+        <div class="spring-spinner">
+            <div class="spring-spinner-part top">
+                <div class="spring-spinner-rotator"></div>
+            </div>
+            <div class="spring-spinner-part bottom">
+                <div class="spring-spinner-rotator"></div>
+            </div>
+        </div>
+        <div class="scaling-squares-spinner" :style="spinnerStyle">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="looping-rhombuses-spinner">
+            <div class="rhombus"></div>
+            <div class="rhombus"></div>
+            <div class="rhombus"></div>
+        </div>
+        <div class="hollow-dots-spinner" :style="spinnerStyle">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    <div class="section">
+
+        <div style="width: 1200px;margin: 0 auto">
+            <canvas width="1200" height="500"></canvas>
+            <script src="https://unpkg.com/d3-timer"></script>
+            <script>
+
+                var words = "Hello, it’s me\nI was wondering if after all these years you’d like to meet\nTo go over everything\nThey say that time’s supposed to heal ya\nBut I ain’t done much healing\n\nHello, can you hear me\nI’m in California dreaming about who we used to be\nWhen we were younger and free\nI’ve forgotten how it felt before the world fell at our feet\n\nThere’s such a difference between us\nAnd a million miles\n\nHello from the other side\nI must have called a thousand times\nTo tell you I’m sorry for everything that I’ve done\nBut when I call you never seem to be home\n\nHello from the outside\nAt least I can say that I’ve tried\nTo tell you I’m sorry for breaking your heart\nBut it don’t matter it clearly doesn’t tear you apart anymore\n\nHello, how are you?\nIt’s so typical of me to talk about myself I’m sorry\nI hope that you’re well\nDid you ever make it out of that town where nothing ever happened\n\nIt’s no secret that the both of us\nAre running out of time\n\nSo hello from the other side\nI must have called a thousand times\nTo tell you I’m sorry for everything that I’ve done\nBut when I call you never seem to be home\nHello from the outside\nAt least I can say that I’ve tried\nTo tell you I’m sorry for breaking your heart\nBut it don’t matter it clearly doesn’t tear you apart anymore\n\nOoooohh, anymore\nOoooohh, anymore\nOoooohh, anymore\nAnymore\n\nHello from the other side\nI must have called a thousand times\nTo tell you I’m sorry for everything that I’ve done\nBut when I call you never seem to be home\nHello from the outside\nAt least I can say that I’ve tried\nTo tell you I’m sorry for breaking your heart\nBut it don’t matter it clearly doesn’t tear you apart anymore".split(/\s+/g);
+
+                var canvas = document.querySelector("canvas"),
+                    canvas2 = canvas.cloneNode(),
+                    context = canvas.getContext("2d"),
+                    context2 = canvas2.getContext("2d");
+                width = canvas.width,
+                    height = canvas.height;
+
+                context.font = context2.font = "300px Helvetica Neue";
+                context.textAlign = context2.textAlign = "center";
+                context.lineJoin = context2.lineJoin = "round";
+
+                (function next() {
+                    var i = 0.5, text = words.shift();
+                    context.clearRect(0, 0, width, height);
+                    context.fillText(text, width / 2, height / 2 + 100);
+                    var timer = d3.timer(function() {
+                        if (++i > text.length * 20) return timer.stop(), next();
+                        context2.save();
+                        context2.clearRect(0, 0, width, height);
+                        context2.lineWidth = i & 1 ? i * 5 + 3 : i * 5;
+                        context2.strokeStyle = i & 1 ? "white" : "black";
+                        context2.strokeText(text, width / 2, height / 2 + 100);
+                        context2.restore();
+                        context2.drawImage(canvas, 0, 0);
+                        context.drawImage(canvas2, 0, 0);
+                    });
+                })();
+
+            </script>
+        </div>
+    </div>
+    <div class="section ">
+        <div style="width: 640px;height: 500px;margin: 0 auto;overflow: hidden;position: relative">
+            <iframe src="https://threejs.org/examples/webgl_effects_anaglyph.html" frameborder="0" width="100%" height="600px" style="position: relative;top: -50px;"></iframe>
+        </div>
+    </div>
+
+    <div class='all'>
+        <div class='box'>
+            <a href='./mimimi.html'> <div class='card bg-02'><span class='card-content'>mimimi</span></div> </a>
+        </div>
+        <div class='box'>
+            <a href='./index.html'> <div class='card bg-01'><span class='card-content'>( ⊙ o ⊙ )</span></div> </a>
+        </div>
+        <div class='box'>
+            <a href='./bg.html'> <div class='card bg-03'><span class='card-content'>视觉差</span></div> </a>
+        </div>
+        <div class='box'>
+            <a href='./flex.html'> <div class='card bg-04'><span class='card-content'>flex移动端布局</span></div> </a>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/prettify.min.js"></script>
+    <script src="js/topbar.js"></script>
+    <script>
+        $(function() {
+            prettyPrint()
+            function resetToDefaults() {
+                topbar.config({
+                    autoRun      : true,
+                    barThickness : 3,
+                    barColors    : {
+                        '0'      : 'rgba(26,  188, 156, .9)',
+                        '.25'    : 'rgba(52,  152, 219, .9)',
+                        '.50'    : 'rgba(241, 196, 15,  .9)',
+                        '.75'    : 'rgba(230, 126, 34,  .9)',
+                        '1.0'    : 'rgba(211, 84,  0,   .9)'
+                    },
+                    shadowBlur   : 10,
+                    shadowColor  : 'rgba(0,   0,   0,   .6)'
+                })
+            }
+
+            // Page load
+            resetToDefaults()
+            topbar.show()
+            setTimeout(function() {
+                $('#main_content').fadeIn('slow')
+                topbar.hide()
+            }, 1500)
+
+            // Simple Demo
+            $('#btnStartSimple').click(function() {
+                resetToDefaults()
+                topbar.show()
+            })
+            $('#btnStopSimple').click(function() {
+                topbar.hide()
+            })
+
+            // Advanced Demo
+            $('#btnStartAdvanced').click(function() {
+                resetToDefaults()
+                topbar.config({
+                    autoRun      : false,
+                    barThickness : 5,
+                    barColors    : {
+                        '0'      : 'rgba(26,  188, 156, .7)',
+                        '.3'     : 'rgba(41,  128, 185, .7)',
+                        '1.0'    : 'rgba(231, 76,  60,  .7)'
+                    },
+                    shadowBlur   : 5,
+                    shadowColor  : 'rgba(0, 0, 0, .5)'
+                })
+                topbar.show();
+                (function step() {
+                    setTimeout(function() {
+                        if (topbar.progress('+.01') < 1) step()
+                    }, 16)
+                })()
+            })
+            $('#btnStopAdvanced').click(function() {
+                topbar.hide()
+            })
+        })
+
+    </script>
+    <script src="js/jquery-ui-1.10.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+
+    <script>
+        $(function () {
+            $.fn.fullpage({
+                anchors: ['page1', 'page2', 'page3', 'page4','page5'],
+                navigation: true
+            });
+
+        })
+    </script>
+
+    <script>
+        // 设置页面颜色
+        $(function () {
+            var pagecolor = new Array("red","orange","yellow","green","cyan","blue","purple")
+            $('.section').each(function (index) {
+                $(this).css({"background":"linear-gradient("+ pagecolor[index] +", "+ pagecolor[index+1]+")"})
+                console.log(pagecolor[index+1])
+            })
+        })
+    </script>
+    <script src="js/button.js"></script>
+
+</body>
+</html>
